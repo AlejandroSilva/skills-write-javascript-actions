@@ -1,5 +1,15 @@
 name: "my joke action"
+
 description: "use an external API to retrieve and display a joke"
+
 runs:
   using: node20
   main: main.js
+
+outputs:
+  joke-output:
+    description: The resulting joke from the icanhazdadjokes API
+
+branding:
+  icon: star
+  color: orange
